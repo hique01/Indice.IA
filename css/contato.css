@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+    --bg-color: #1B2C40;
+    --segunda-bg-color: #37577F; 
+    --texto-color: #fff;
+    --main-color:#69B4FF; 
+}
+
+
+body {
+    background-color: var(--segunda-bg-color);;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin: 5rem auto 0 auto;
+    text-align: center;
+    color: var(--texto-color);
+    flex-grow: 1;
+}
+
+.btn-voltar {
+    margin: 2rem 0rem;
+}
+
+.paragrafo {
+    margin: 0 4rem;
+}
+
+.formulario {
+    background-color: var(--segunda-bg-color);
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    margin: 1rem 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    color: var(--texto-color);
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 1rem 0 0.5rem 0;
+}
+
+input {
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--texto-color);
+    padding: 0.75rem;
+    margin: 0 auto 0 auto;
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    font-size: .8rem;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+input::placeholder {
+    color: var(--texto-color);
+}
+
+
+#mensagem {
+    width: 100%;
+    min-height: 10.75rem;
+    text-align: left;
+    color: var(--texto-color);
+    font-size: .8rem;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0.75rem;
+    background-color: var(--bg-color);
+}
+
+input[type=submit] {
+    width: 9.5rem;
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--bg-color);
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem auto 2rem auto;
+
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem ;
+    color: var(--segunda-bg-color);
+    /*colocar depois hover abaixo*/
+    transition: .7s;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 0 2rem var(--main-color);
+    color: var(--bg-color);
+}
+
+
+/*--------------- TABLET ---------------*/
+@media (min-width: 480px) {
+
+    .paragrafo {
+        margin: 5rem 7.2rem 2.5rem;
+        font-size: 18px;
+    }
+
+    .formulario {
+        margin: 0rem 7.2rem 5.5rem;
+    }
+
+    input[type=submit] {
+        width: 10.25rem;
+
+    }
+}
+
+/*--------------- TELA PEQUENA ---------------*/
+
+@media (min-width: 770px) {
+    .paragrafo {
+        margin: 0 16rem;
+        font-size: 18px;
+
+    }
+
+    .formulario {
+        margin: 2rem 16rem 2rem;
+    }
+
+    input[type=submit] {
+        width: 10.25rem;
+    }
+}
+
+
